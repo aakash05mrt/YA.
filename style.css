@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(212, 231, 241);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    font-weight: bolder;
+    font-size: large;
+}
+
+nav{
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('back.jfif');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0px 16px;
+    border-radius: 34px;
+    height: 34px;
+    border-radius: 50px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .box{
+    display: flex;
+    justify-content: left;
+    align-items:initial;
+    background-color: lawngreen;
+} */
+
+
+
+
+
+@media (max-width: 825px) {
+    .songItem{
+        height: 117px;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    /* background-color: #e7dede; */
+    color: black;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 64px;
+    /* background : url(logo.png); */
+    background: none;
+    padding: 9px;
+    }
+    .bottom{
+        position: sticky;
+        bottom: 0;
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .icons {
+        margin-top: 36px;
+    }
+    .songInfo{
+        top: 30px;
+        /* background-color: blueviolet; */
+    }
+    .container{
+        justify-content: center;
+    }
+    .songItemContainer{
+        margin-top: 15px;
+    }
+    .songItem img{
+        width: 124px;
+        margin: -2px 64px;
+        /* border-radius: 34px; */
+        height: 90px;
+        border-radius: 300px;
+        /* opacity: 0.7; */
+        padding: 2px
+    }
+    .songName{
+        font-weight: bolder;
+        /* background: aliceblue; */
+        display: flex;
+        width: 139px;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid wheat; */
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .timestamp{
+    border-top: none;
+    width: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bolder;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(106, 89, 232);
+        background-color: rgb(212, 231, 241);
+        border-radius: 7px;
+    }
+
+    .container
+    {
+        background-color: #529160;
+       /* background: url(covers/4.jpg); */
+       background-size: cover;
+    }
+    
+}

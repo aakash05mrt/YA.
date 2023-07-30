@@ -10,7 +10,7 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Baari", filePath: "songs/1.mp3", coverPath: "pc2.jpg"},
+    {songName: "Dil Na Janeeya", filePath: "songs/1.mp3", coverPath: "pc2.jpg"},
     {songName: "Saibo", filePath: "songs/2.mp3", coverPath: "pc3.jpg"},
     {songName: "Kasoor", filePath: "songs/3.mp3", coverPath: "pc4.jpg"},
     {songName: "Manjha", filePath: "songs/4.mp3", coverPath: "pc5.jpg"},
@@ -22,7 +22,10 @@ songItems.forEach((element, i)=>{
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
 })
  
-
+function showMessage() {
+    const tapBox = document.getElementById('tapBox');
+    tapBox.innerHTML = "I love you Yashi ❤️ !!";
+}
 // Handle play/pause click
 masterPlay.addEventListener('click', ()=>{
     if(audioElement.paused || audioElement.currentTime<=0){

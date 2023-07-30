@@ -216,10 +216,12 @@ nav ul li a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid rgb(106, 89, 232);
+        border: 2px solid rgb(158, 81, 99);
         background-color: rgb(212, 231, 241);
-        border-radius: 7px;
+        /* background-color: lightblue; */
+        border-radius: 70px;
     }
+
 
     .container
     {
@@ -227,5 +229,28 @@ nav ul li a{
        /* background: url(covers/4.jpg); */
        background-size: cover;
     }
-    
+    .akash{
+        /* background-color: rebeccapurple; */
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #tapBox {
+        width: 200px;
+        height: 50px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* cursor: pointer; */
+        font-size: 18px;
+        border-radius: 10px;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        align-items: center;
+    }
 }
